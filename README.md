@@ -1,7 +1,11 @@
 # Istruzioni per vedere singoli progetti
 
 #### Percorso
-- Recarsi nel file src/App.js e importare il percorso corretto del singolo progetto. Esemio: `import Progetto from "../src/projects/1-appuntamenti/Appuntamenti";`
+- Recarsi nel file src/App.js e importare il percorso corretto del singolo progetto.
+- Esempio: `import Progetto from "../src/projects/1-appuntamenti/Appuntamenti";`
+
+#### npm start
+- Lanciare npm start dalla cartella projects.
 
 # react-tutorial-base
 
