@@ -3,7 +3,7 @@ import './App.css';
 
 // importare percorso corretto del progetto per vederlo
 // import Progetto from "../src/projects/?????????/?????????";
-import Progetto from "../src/projects/2-cart/Cart";
+import Progetto from "../src/projects/2-dark_mode/DarkMode";
 
 function App() {
   return (
