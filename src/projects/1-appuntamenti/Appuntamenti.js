@@ -1,7 +1,15 @@
 import React from 'react'
 import TabIncontri from "./UI/TabIncontri";
+import { useEffect } from 'react';
 
 function Appuntamenti() {
+
+  const titlePage = "Appuntamenti";
+
+  useEffect(() => {
+    document.title = titlePage;
+  }, [])
+
   return (
     <section className="container my-5">
       <div className="row">
@@ -14,8 +22,7 @@ function Appuntamenti() {
           <TabIncontri />
         </div>
       </div>
-  
-      
+
     </section>
   )
 }
