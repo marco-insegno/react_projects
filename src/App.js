@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+// importare percorso corretto del progetto per vederlo
+// import Progetto from "../src/projects/?????????/?????????";
+import Progetto from "../src/projects/1-appuntamenti/Appuntamenti";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="container text-center my-3">
+        <Progetto />
+      </section>
     </div>
   );
 }

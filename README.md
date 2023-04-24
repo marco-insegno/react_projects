@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# react-tutorial-base
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Istruzioni Generali per utilizzare in maniera corretta i singoli progetti
 
-## Available Scripts
+- Scaricare il file Zip oppure Clonare (in questo caso rimuovere la cartella .git -rm rf .git [mac] rmdir .git [windows])
+- Spostarsi all'interno del progetto in cui vogliamo lavorare `cd nomeprogetto/inizio`
+- oppure `cd nomeprogetto/risultato` per vederne il risulato finale
+- lanciare comando dal terminale `npm install`
 
-In the project directory, you can run:
+### Progetti Rispetto all'avanzamento del corso
 
-### `npm start`
+Per visionare anteprima dei progetti: https://hpv4learning.it/corso-react-hook-teoria-progetti/?scrollTo=projects
+In ogni progetto troverete una cartella **inizio** ed una **risultato**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Inizio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contiene il progetto con gli elementi necessari per seguire il tutorial:
 
-### `npm test`
+- Tutte le dependencies utilizzate (quando necessario)
+- Styling: Tutto il CSS sarà già precompilato in un file index.css
+- Link: ogni url utilizzato sarà già presente
+- Componenti: I componenti saranno già importati e (ovviamente vuoti)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Risultato
 
-### `npm run build`
+Contiene il progetto completo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Contiene il progetto finale e completo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Dopo aver concluso la sezione riguardo useState Hook
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Appuntamenti: https://appuntamenti-app.netlify.app/
 
-### `npm run eject`
+#### Dopo aver concluso useEffect e Render Condizionale
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. dark-mode: https://dark-mode-tutorial.netlify.app/
+3. vacanze : https://vacanze.netlify.app/
+4. slider: https://slider-tutorial.netlify.app/
+5. Gelateria: https://gelateria-tutorial.netlify.app/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Dopo aver concluso la sezione riguardo a Form e useRef
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Color-Grading: https://color-grading-tutorial.netlify.app/
+7. Navbar: https://navbar-tutorial.netlify.app/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Dopo aver concluso la sezione riguardo ad useReducer, propDrilling e useContext
 
-## Learn More
+8. sidebar: https://sidebar-tutorial.netlify.app/
+9. cart: https://cart-tutorial.netlify.app/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Dopo aver concluso la visione di tutte le puntate di teoria Base
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+10. cocktail: https://wiki-drink.netlify.app/
 
-### Code Splitting
+#### Redux: Dopo aver completato almeno il progetto 8 e 9
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+11. pick.me: https://redux-pick-me.netlify.app/
