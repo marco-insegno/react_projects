@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 // importare percorso corretto del progetto per vederlo
 // import Progetto from "../src/projects/?????????/?????????";
-import Progetto from "../src/projects/2-dark_mode/DarkMode";
+import Progetto from "./projects/4-gelateria/App";
 
 function App() {
   return (

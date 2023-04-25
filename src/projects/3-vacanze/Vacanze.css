@@ -1,0 +1,9 @@
+body{
+    background: rgb(50, 50, 50);
+    color: rgb(220, 220, 220);
+}
+
+.btn-custom{
+    background: cornflowerblue;
+    color: rgb(29, 29, 29);
+}
