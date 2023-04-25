@@ -1,0 +1,38 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import { rgbToHex } from '../utils/helpers'
+
+const SingleColor = ({ rgb, type, weight }) => {
+
+  const [message,setMessage] = useState(false)
+
+  const copiaColore = () => {
+    navigator.clipboard.writeText(rgbToHex(...rgb))
+    .then(()=> setMessage(true))
+  }
+
+  useEffect(()=>{
+    const timer = setTimeout(()=> {
+      setMessage(false)
+    },1000)
+
+    return() => clearTimeout(timer)
+  })
+
+  return (
+    <>
+      <article className={`single-color ${type}`}
+      onClick={copiaColore}
+        style={{ backgroundColor: rgbToHex(...rgb) }}>
+
+        <h5>{rgbToHex(...rgb)}</h5>
+        {
+          message && <p>Colore Copiato</p>
+        }
+
+      </article>
+    </>
+  )
+};
+
+export default SingleColor;
