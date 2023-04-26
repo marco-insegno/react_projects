@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import data from "../fakeData";
 import Gelato from "./Gelato";
 // import axios from "axios";
 
@@ -69,7 +68,7 @@ const Menu = () => {
 
     return (
 
-      <div className="container">
+      <div className="container mt-5">
         <h4 className="text-center text-uppercase">Le nostre Scelte</h4>
 
         <div className="lista-categorie">

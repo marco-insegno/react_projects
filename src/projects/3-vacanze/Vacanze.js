@@ -1,6 +1,7 @@
 import React from 'react'
 import './Vacanze.css'
 import { useState, useEffect } from 'react';
+import SpinnerDefault from './UI/SpinnerDefault/SpinnerDefault';
 import Title from './UI/Title';
 import Holiday from './UI/Holiday.js/Holiday';
 
@@ -85,13 +86,8 @@ function Vacanze() {
   } else {
 
     return (
-      <section className="container mt-5">
-        <div className="row mt-4 d-flex justify-content-center">
-          <div className="col-12 col-md-8 ">
-            <h3>Loading...</h3>
-          </div>
-        </div>
-      </section>
+
+      <SpinnerDefault/>
     )
 
   }

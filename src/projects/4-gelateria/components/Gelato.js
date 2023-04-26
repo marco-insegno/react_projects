@@ -6,7 +6,7 @@ const Gelato = ({ nome, descrizione, categoria, img, prezzo, id }) => {
     <article className="gelato">
       <div className="img-container">
 
-        <img alt={nome} src={img} className="img" />
+        <img alt={nome} src={img} className="img" title={`Prova ${nome} a ${(prezzo / 100).toFixed(2)}€ !!!`} />
       </div>
       <div className="prd-info">
         <header className="prd-header">

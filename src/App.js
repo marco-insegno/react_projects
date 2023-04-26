@@ -7,9 +7,9 @@ import Progetto from "./projects/5-color-gradient/ColorGradient";
 function App() {
   return (
     <div className="App">
-      <section className="container text-center my-3">
+      
         <Progetto />
-      </section>
+      
     </div>
   );
 }

@@ -29,9 +29,9 @@ function DarkMode() {
 
 
     return (
-        <div className='container mt-5 '>
+        <section className='container mt-5 '>
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 text-center">
                     <button className=
                         {
                             theme === 'light-mode'
@@ -50,7 +50,8 @@ function DarkMode() {
                     </button>
                 </div>
             </div>
-            <div className="row mt-5 justify-content-center">
+
+            <div className="row mt-3 d-flex justify-content-center">
                 <div className="col-12 col-md-10 col-md-8">
                     <div className="row mt-5">
                         {
@@ -67,7 +68,8 @@ function DarkMode() {
 
                 </div>
             </div>
-        </div>
+
+        </section>
     )
 }
 
