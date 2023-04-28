@@ -1,0 +1,21 @@
+.sidebar-custom,
+.sidebar-hidden {
+  height: 50vh;
+  width: 50vw;
+  padding: 50px 20px;
+  position:fixed;
+  right:0;
+  transition: 0.5s;
+}
+
+.sidebar-custom {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.sidebar-hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  visibility: collapse;
+}
+
