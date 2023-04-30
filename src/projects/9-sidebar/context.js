@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useState} from "react";
+import React, { createContext, useContext, useState } from "react";
 
 // creo Context
 const AppSidebarContext = createContext()
@@ -6,8 +6,9 @@ const AppSidebarContext = createContext()
 
 // Creiamo un componente (AppProvider),che ritorna il Context
 // Con il {children.props} riusciamo a passare a tutti i componenti wrappati dal Context ciò che è contenuto nel suo attributo value
-const AppProvider = ({children}) => {
+const AppProvider = ({ children }) => {
 
+    //Sidebar
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     const openSidebar = () => {
@@ -19,8 +20,29 @@ const AppProvider = ({children}) => {
         setIsSidebarOpen(false)
     }
 
+    //Modale
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+
+    const openModal = () => {
+
+        setIsModalOpen(true)
+    }
+    console.log(isModalOpen);
+
+    const closeModal = () => {
+
+        setIsModalOpen(false)
+    }
+
     return (
-        <AppSidebarContext.Provider value={{ isSidebarOpen, openSidebar, closeSidebar  }}>
+        <AppSidebarContext.Provider value={{ 
+            isSidebarOpen, 
+            openSidebar, 
+            closeSidebar,
+            isModalOpen,
+            openModal,
+            closeModal }}>
             {children}
         </AppSidebarContext.Provider>
     )
@@ -32,4 +54,4 @@ const useGlobalContext = () => {
     return useContext(AppSidebarContext)
 }
 
-export {AppProvider, useGlobalContext}
+export { AppProvider, useGlobalContext }

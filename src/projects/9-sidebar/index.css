@@ -3,8 +3,8 @@
   height: 50vh;
   width: 50vw;
   padding: 50px 20px;
-  position:fixed;
-  right:0;
+  position: fixed;
+  right: 0;
   transition: 0.5s;
 }
 
@@ -19,3 +19,26 @@
   visibility: collapse;
 }
 
+.modal-custom {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid green;
+  position: fixed;
+  top: 0;
+  background-color: rgba(191, 191, 191, 0.861);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-custom-hidden{
+  opacity: 0;
+  transform: translateX(100%);
+  visibility: collapse;
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid green;
+  position: fixed;
+  top: 0;
+}
