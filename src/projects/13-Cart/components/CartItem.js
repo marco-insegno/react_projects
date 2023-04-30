@@ -2,8 +2,7 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons"
-import Button from 'react-bootstrap/Button';
+import { faTrash, faCirclePlus, faCircleMinus } from "@fortawesome/free-solid-svg-icons"
 
 const CartItem = ({ id, name, price, image, countInStock }) => {
   return (
@@ -13,12 +12,15 @@ const CartItem = ({ id, name, price, image, countInStock }) => {
           <img src={image} alt={name} className="img-fluid" width="100%" />
         </Col>
         <Col className="d-flex align-items-center text-start">{name}</Col>
-        {/* <Col>{countInStock}</Col> */}
         <Col className="d-flex align-items-center justify-content-center">
           <div>
-            <Button variant="outline-primary" size="sm">+</Button>
+
+              <FontAwesomeIcon icon={faCirclePlus} className="text-success fs-4" />
+
             <p className="my-2">{countInStock}</p>
-            <Button variant="outline-danger" size="sm">-</Button>
+
+            <FontAwesomeIcon icon={faCircleMinus} className="text-danger fs-4" />
+
           </div>
         </Col >
         <Col className="fs-5 d-flex align-items-center justify-content-center">{price} €</Col>
