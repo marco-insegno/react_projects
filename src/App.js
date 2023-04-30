@@ -2,7 +2,7 @@ import './App.css';
 
 // importare percorso corretto del progetto per vederlo
 // import Progetto from "../src/projects/?????????/?????????";
-import Progetto from "./projects/10-customHooks/CustomHookApp";
+import Progetto from "./projects/11-propsType/PropsType";
 
 function App() {
   return (
