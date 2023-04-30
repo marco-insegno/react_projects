@@ -2,7 +2,8 @@ import './App.css';
 
 // importare percorso corretto del progetto per vederlo
 // import Progetto from "../src/projects/?????????/?????????";
-import Progetto from "./projects/11-propsType/PropsType";
+// per progetto 12 fare rifermento a index.js come file di entrata
+import Progetto from "./projects/12-Router/index";
 
 function App() {
   return (
