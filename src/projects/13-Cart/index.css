@@ -1,0 +1,29 @@
+:root{
+  --color-primary: rgb(33, 37, 41);
+  --color-secondary: rgba(218, 177, 53, 0.82);
+  --color-white: rgb(255, 255, 255)
+}
+
+body{
+  background: rgb(176, 126, 126);
+}
+
+.color-icon{
+  color: var(--color-secondary);
+}
+.total-box-custom{
+  background: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+  border-bottom:2px solid var(--color-primary);
+  border-left:2px solid var(--color-primary);
+  border-bottom-left-radius: 50px ;
+}
+
+
+@media screen and (max-width: 768px){
+  .total-box-custom{
+    border-left:none;
+    border-bottom-left-radius: 0px ;
+  }
+}
