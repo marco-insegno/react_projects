@@ -4,12 +4,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { products } from '../products'
 import CartItem from "./CartItem";
+import Button from 'react-bootstrap/Button';
+import { useGlobalContext } from "../context/context";
 
 const Cart = () => {
 
-  console.log(products);
+  // rinomino products in prodotti
+  const{products: prodotti, deleteAll} = useGlobalContext();
+
   return (
 
     <Container className="mt-5">
@@ -20,19 +23,19 @@ const Cart = () => {
         <Col>Qty</Col>
         <Col>Prezzo</Col>
         <Col>
-          <FontAwesomeIcon icon={faCartArrowDown} className="color-icon fs-4" />
+          <Button variant="link" onClick={deleteAll}>
+            <FontAwesomeIcon icon={faCartArrowDown} className="color-icon fs-4" />
+          </Button>
         </Col>
       </Row>
 
       <hr className="text-white" />
 
-      
-
       {
-        products && products.map((product) => {
+        prodotti && prodotti.map((prodotto) => {
           return (
 
-            <CartItem key={product._id}  {...product}/>
+            <CartItem key={prodotto._id}  {...prodotto} />
 
           )
         })

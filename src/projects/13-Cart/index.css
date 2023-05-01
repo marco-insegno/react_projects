@@ -15,15 +15,17 @@ body{
   background: var(--color-secondary);
   color: var(--color-white);
   text-align: center;
-  border-bottom:2px solid var(--color-primary);
+  border-top:2px solid var(--color-primary);
   border-left:2px solid var(--color-primary);
-  border-bottom-left-radius: 50px ;
+  border-top-left-radius: 25px ;
+  position: fixed;
+  bottom: 0;
 }
 
 
 @media screen and (max-width: 768px){
   .total-box-custom{
     border-left:none;
-    border-bottom-left-radius: 0px ;
+    border-top-left-radius: 0px ;
   }
 }
