@@ -4,17 +4,21 @@ import TotalBox from "./components/TotalBox";
 import Loading from "./components/Loading";
 import { useGlobalContext } from "./context/context";
 
-function App() {
-  const { isLoading, products, total } = useGlobalContext()
 
+
+function App() {
+
+  const { isLoading, products, total } = useGlobalContext();
 
 
   if (isLoading) {
 
     return (
       <>
+
         <Navigation />
         <Loading />
+
       </>
     )
 
@@ -26,32 +30,31 @@ function App() {
 
         {
           products.length > 0 ?
-
             <>
               <TotalBox />
               <Cart />
             </>
-
             :
             <>
-              <section className="container mt-5 py-5 text-center">
-                <div className="row">
-                  <div className="col-12">
-                    <h1 className="text-white fst-italic">Il tuo carrello è vuoto !!!</h1>
+                <section className="container mt-5 pt-5 text-center">
+                  <div className="row">
+                    <div className="col-12">
+                      <h1 className="text-white fst-italic">Il tuo carrello è vuoto !!!</h1>
+                    </div>
                   </div>
-                </div>
-              </section>
-              
+                </section>
             </>
 
         }
         {
-          total >0 && <TotalBox />
+          total > 0 && <TotalBox />
         }
 
       </>
     )
   }
+
+
 
 }
 
